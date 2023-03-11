@@ -1,0 +1,80 @@
+
+
+dialog{
+    display: block;
+    padding:10px;
+    width: fit-content;
+    height: fit-content;
+    visibility: hidden;
+    background-color:rgba(255, 255, 255, 0.961);
+    border-radius: 1rem;
+    text-align: center;
+    position:fixed;
+    top: 50%;
+    left: 20%;
+}
+
+h1{
+    text-align: center;
+    font-size:xx-large;
+}
+
+img{
+    width: 16px;
+    height: 16px;
+}
+
+button{
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 20%;
+    border-style:outset;
+    border-width: 1px;
+
+}
+
+table{
+    background-color:rgba(255, 255, 255, 0.516);
+    width:90%;
+    margin: 5%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 2rem;
+}
+
+
+
+ul{
+  
+    margin: 5cm;
+}
+
+#ti{
+    width: 20%;
+}
+
+#da{
+    width: 10%;
+}
+
+#summary{
+    width: 60%;
+}
+
+#add{
+    margin-top: 1%;
+    margin-left: 46%;
+    margin-bottom: 50%;
+    text-align: center;
+    font-size:larger;
+}
+
+
+body{
+    font-size:25px;
+    font-family:'Times New Roman', Times, serif;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
+    background-attachment: fixed; 
+}

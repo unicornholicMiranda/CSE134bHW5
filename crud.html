@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>appliaction</title>
+    <script defer type="module" >
+        import {renderPosts} from './blog1.js';
+        import {save} from './blog1.js';
+        import {start} from './blog1.js';
+        import {cancle} from './blog1.js';
+        document.getElementById("add").addEventListener("click", start);
+    </script>
+</head>
+<body>
+    <h1>Blog Posts List:</h1>
+    <br>
+
+    <ul id="postlist"><li>first item</li></ul>
+
+    <button id="add">Add Post</button>
+
+    <dialog id="postdialog" style="display: block; position:absolute; left: 50%;border: 2px solid black; padding:10px; width: fit-content; visibility: hidden;">
+        <form id="form">
+            <label for="title">Post Title:</label><br>
+            <input type="text" id="title" name="title"><br>
+
+            <label for="date">Post Date:</label><br>
+            <input type="date" id="date" name="date"><br><br>
+
+            <label for="sum">Post summary:</label><br>
+            <input type="text" id="sum" name="sum"><br><br>
+
+            <button id="cancle">Cancle</button>
+            <button type="submit">Save</button>
+        </form>
+    </dialog>
+
+    <dialog id="updatedialog" style="display: block; position:absolute; left: 50%;border: 2px solid black; padding:10px; width: fit-content; visibility: hidden;">
+        <form id="form2">
+            <label for="title2">Post Title:</label><br>
+            <input type="text" id="title2" name="title2"><br>
+
+            <label for="date2">Post Date:</label><br>
+            <input type="date" id="date2" name="date2"><br><br>
+
+            <label for="sum2">Post summary:</label><br>
+            <input type="text" id="sum2" name="sum"><br><br>
+
+            <button id="cancle1">Cancle</button>
+            <button id ='confirm'>Confirm</button>
+        </form>
+    </dialog>
+
+    <dialog id="deldialog" style="display: block; position:absolute; left: 50%;border: 2px solid black; padding:10px; width: fit-content; visibility: hidden;">
+        <h3>Delete Post?</h3><br><br>
+        <button id="ok">Ok</button>
+        <button id="Cancle2">Cancel</button>
+    </dialog>
+
+
+ 
+    <h2 id="test"></h2>
+</body>
+</html>

@@ -1,0 +1,6 @@
+Changes I made to my protfolio:
+- Changed the background to a scrollable image
+- Rearranged elements on the pages
+- Changed background for different tags such as forms and list
+- Added a bilibili API to the about page. The reason I use this API is because if I load my video in it will takes too long for the video to load, and in some browser it just won't load. Therefore, using this API where I uploaded my 
+video will load the video immediately.

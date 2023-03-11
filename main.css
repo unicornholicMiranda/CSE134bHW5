@@ -1,0 +1,278 @@
+:root{
+    color:rgb(248, 216, 255);
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    
+    
+}
+
+
+hr{
+    color: #443150;
+    border-width: 0ch;
+}
+
+#about{
+  display: flex;
+  justify-content: center;
+}
+
+#name{
+    font-size: 4.3rem;
+    color:bisque;
+    font-family: 'Pacifico', cursive;
+}
+
+
+
+
+
+.hd{
+    margin-left: auto;
+    margin-right: auto;
+    width: 17cm;
+}
+.headerop{
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    color: antiquewhite;
+    padding: 0.15cm;
+}
+
+h2{
+    margin-bottom: 0ch;
+}
+
+.headerop:hover{
+    font-size:large;
+    transform: rotate(20deg);
+    transition-duration: 0.09s;
+}
+
+#quote{
+    font-family: 'Caveat', cursive;
+    font-size: 2.5rem;
+}
+
+
+#codepart{
+    background-color: black !important;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width:fit-content;
+}
+
+#code{
+    margin-left: auto;
+    margin-right: auto;
+    width:fit-content;
+    border-radius: 0.5cm;
+    background-color: black !important;
+
+}
+
+
+#name:hover{
+  animation-name: h1an;
+  animation-duration: 4s;
+}
+
+@keyframes h1an {
+    from{color: bisque; font-stretch:normal;}
+    to {color: rgb(238, 28, 150); font-stretch:expanded;}
+}
+
+#type{
+
+    overflow: hidden; 
+    border-right: .15em solid orange;
+    white-space: nowrap; 
+    margin: 0 auto;
+    letter-spacing: .15em;
+    display: flex;
+    justify-content: center;
+    width:fit-content;
+    animation: 
+      typing 6s steps(70, end),
+      blink-caret .75s step-end 1;
+      animation-delay: 0.5s;
+      animation-fill-mode: forwards;
+  }
+  #type2{
+
+    overflow: hidden; 
+    border-right: .15em solid orange;
+    white-space: nowrap; 
+    margin: 0 auto;
+    letter-spacing: .15em;
+    display: flex;
+    justify-content: center;
+    width:fit-content;
+    animation: 
+      typing 6s steps(70, end),
+      blink-caret .75s step-end 1;
+      animation-delay: 0.5s;
+      animation-fill-mode: forwards;
+  }
+
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+  .content{
+    font-family: 'Caveat', cursive;
+    font-size: 1.5rem;
+  }
+
+  .portfolio{
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: 'Abril Fatface', cursive ; 
+    font-size: 1.5rem;
+    padding: 0%;
+    top:0.5%;
+    left:1%; 
+    position: fixed;
+    
+  }
+
+  .portfolio:hover{
+    
+    font-size: 2rem;
+    transition-duration: 0.09s;
+  }
+
+
+  .img{
+    display: inline-block;
+  }
+
+  .img2{
+    display: inline-block;
+    width: 5px;
+  }
+
+
+  img{
+    width:450px;
+  }
+
+  .icon{
+    width: 50px;
+    height: 50px;
+    padding-right: 0cm;
+  }
+
+  button{
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    padding: 0ch;
+  }
+  #contact{
+    font-size: 0.5rem;
+  }
+
+
+.icon:hover{
+    width: 80px;
+    height: 80px;
+    transition-duration: 1s;
+}
+
+#qa{
+    padding-left: 15%; 
+    padding-right: 15%;
+    font-family: 'Caveat', cursive;
+    font-size: 0/5rem;
+}
+
+#thx{
+    font-size: 2rem;
+}
+
+
+#fooled{
+  width: 200px;
+  height: 40px;
+ background-color: rgba(223, 30, 98, 0.396);
+  text-align: center;
+}
+
+#fooled:hover{
+  transform: translate(300px,0px) rotate(3.142rad);
+  
+
+}
+
+.background-image {
+  background-image: url('media/001.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width:50ch;
+  height: 50ch;
+  color:black;
+  font-family: 'Caveat', cursive;
+  font-size: 2rem;
+}
+
+.background-image1 {
+  background-image: url('media/wp6268467-blackpink-coachella-wallpapers.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width:100ch;
+  height: 70ch;
+  color:rgb(255, 255, 255);
+  font-family: 'Caveat', cursive;
+  font-size: 2rem;
+}
+
+#skill{
+  background-color: rgba(85, 95, 103, 0.722);
+  border-radius: 1rem;
+  border: none;
+}
+
+table{
+  width: 100%;
+  font-size: larger;
+  padding: 20px;
+}
+colgroup{
+  height: 70px;
+  width: 80%;
+}
+
+td{
+  height: 40px;
+}
+
+#project{
+  width: 100%;
+  height: 100%;
+  font-size: larger;
+  margin: 5%;
+  background-color:rgba(85, 95, 103, 0.722);
+  border-radius: 1rem;
+  padding: 20px;
+}
+
+body{
+    background-image: url("dark.jpg");
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: 100% 100%;
+    background-attachment: fixed; 
+}
+

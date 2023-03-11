@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@2.3.2/dist/purify.min.js"></script>
+    
+    <script async type="module" >
+        import {Alert} from './customdialog.js';
+        import {Confirm} from './customdialog.js';
+        import {Prompt} from './customdialog.js';
+        document.getElementById("alert1").addEventListener("click", Alert);
+        document.getElementById("confirm1").addEventListener("click", Confirm);
+        document.getElementById("prompt1").addEventListener("click", Prompt);
+    </script>
+   
+</head>
+<body>
+    
+    <button id="alert1">Alert</button>
+    <button id="confirm1" onclick="confirmbtn();" >Confirm</button>
+    <button id="prompt1" onclick="promptbtn();" >Prompt</button>
+
+    <dialog id="alertdialog1" style="display: block; position:absolute; left: 50%;border: 2px solid black; padding:10px; width: fit-content; visibility: hidden;">
+        <h3>Alert Pressed!</h3>
+        <button id="okbtn1">OK</button>
+    </dialog>
+
+    <dialog id="confirmdialog1" style="display: block; position:absolute; left: 50%;border: 2px solid black; padding:10px; width: fit-content; visibility: hidden;">
+        <h3>Do you confirm this?</h3>
+        <button id="canclebtn2">Cancle</button>
+        <button id="okbtn2">OK</button>
+    </dialog>
+
+    <dialog id="promtdialog1" style="display: block; position:absolute; left: 50%;border: 2px solid black; padding:10px; width: fit-content; visibility: hidden;">
+        <h3>What is your name?</h3>
+        <input type="text" id="userinput"><br><br>
+        <button id="canclebtn3">Cancle</button>
+        <button id="okbtn3">OK</button>
+    </dialog>
+
+    <br><br>
+    <output id="outputtag" style="visibility: hidden;"></output>
+</body>
+</html>
+

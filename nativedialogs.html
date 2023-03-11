@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/javascript" href="dist/purify.js"/>
+    <title>Simple Dialog</title>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@2.3.2/dist/purify.min.js"></script>
+    <script>
+        function confirmbtn(){
+            
+            if(confirm('Do you confirm this?')){
+                document.getElementById("outputtag").textContent = "The value returned by the confirm method is : true";
+            }
+            else{
+                document.getElementById("outputtag").textContent = "The value returned by the confirm method is : false";
+            }
+        }
+
+        function promptbtn(){
+            let str = prompt("What is your name?");
+            if(str == "" || str == null){
+                document.getElementById("outputtag").textContent = "User didn’t enter anything";
+            }
+            else{
+                document.getElementById("outputtag").innerHTML =`The value returned by the promt method is : ${str}`;
+            }
+        }
+
+        function saferpromptbtn(){
+            let result = prompt("What is your name?");
+            if(result == null || result == ""){
+                document.getElementById("outputtag").textContent = "User didn’t enter anything";
+            }
+            else{
+                let result2 = DOMPurify.sanitize(result);
+                document.getElementById("outputtag").innerHTML =`The value returned by the promt method is : ${result2}`;
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <button id="alert" onclick="alert('Alert pressed!')" >Alert</button>
+    <button id="confirm" onclick="confirmbtn();" >Confirm</button>
+    <button id="prompt" onclick="promptbtn();" >Prompt</button>
+    <button id="Saferprompt" onclick="saferpromptbtn();">Safer Prompt</button>
+
+    <hr>
+    <output id="outputtag" ></output>
+</body>
+</html>

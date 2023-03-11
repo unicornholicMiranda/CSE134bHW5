@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"  content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>appliaction</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer type="module" src="blog.js"></script>
+</head>
+<body>
+    <h1>Blog Posts List</h1>
+    <br>
+
+    <div id="no">
+        <table>
+            <thead>
+            <tr>
+                <th id="ti">Post Title</th>
+                <th id="da">Post Date</th>
+                <th id="summary">Post Summary</th>
+            </tr>
+            </thead>
+            <tbody id="posttable">
+
+            </tbody>
+        </table>
+    </div>
+
+    <button id="add">Add Post</button>
+
+    <dialog id="postdialog">
+        <form id="form">
+            <label for="title">Post Title:</label><br>
+            <input type="text" id="title" name="title"><br>
+
+            <label for="date">Post Date:</label><br>
+            <input type="text" id="date" name="date"><br><br>
+
+            <label for="sum">Post summary:</label><br>
+            <input type="text" id="sum" name="sum"><br><br>
+
+            <button id="cancle">Cancle</button>
+            <button type="submit">Save</button>
+        </form>
+    </dialog>
+
+    <dialog id="updatedialog">
+        <form id="form2">
+            <label for="title2">Post Title:</label><br>
+            <input type="text" id="title2" name="title2"><br>
+
+            <label for="date2">Post Date:</label><br>
+            <input type="text" id="date2" name="date2"><br><br>
+
+            <label for="sum2">Post summary:</label><br>
+            <input type="text" id="sum2" name="sum"><br><br>
+
+            <button id="cancle1">Cancle</button>
+            <button id ='confirm'>Confirm</button>
+        </form>
+    </dialog>
+
+    <dialog id="deldialog">
+        <h3>Delete Post?</h3><br><br>
+        <button id="Cancle2">Cancel</button>
+        <button id="ok">Ok</button>
+    </dialog>
+
+
+    
+</body>
+</html>
